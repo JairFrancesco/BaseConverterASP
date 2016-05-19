@@ -17,13 +17,13 @@ namespace ConvertidordeBase
 
         protected void btnConvert_Click(object sender, EventArgs e)
         {
-            long number = Convert.ToInt64(txtNumber.Text);
+            string number = txtNumber.Text;
             int fromBase = Convert.ToInt32(ddlFrom.SelectedValue);
             int toBase = Convert.ToInt32(ddlTo.SelectedValue);
             string result = "";
             try
             {
-                result = BaseConvert.Convert(number,fromBase ,toBase);
+                result = BaseConvert.ConvertBase(number,fromBase ,toBase);
                 //result = BaseConvert.NToDecimal(number, fromBase).ToString();
                 //result = BaseConvert.Convert(number, fromBase, toBase);
             }

@@ -11,7 +11,7 @@
             </p>
             <% if (Page.IsPostBack){ %>
                 <p style="margin-left:10px;">
-                    <asp:Label ID="lblMessageError" runat="server" CssClass="text-danger" role="alert" Text="Label"></asp:Label>    
+                    <asp:Label ID="lblMessageError" runat="server" CssClass="text-danger" role="alert" Text=""></asp:Label>    
                 </p>
             <% } %>
             
@@ -44,7 +44,7 @@
         </div>
         <div class="alert alert-success" role="alert">
             <strong>
-                <asp:Label ID="lblResult" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="lblResult" runat="server" Text=""></asp:Label>
             </strong>
         </div>
 
